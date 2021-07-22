@@ -45,7 +45,7 @@
 		"format": "run-s prettier:fix eslint:fix stylelint:fix",
 		"lint": "run-s prettier:report eslint:report stylelint:report",
 		"preinstall": "npx only-allow npm",
-		"prepare": "husky install",
+		"prepare": "npx husky install",
 		"prettier:fix": "npm run prettier:individual -- .",
 		"prettier:individual": "npm run prettier:template -- --write",
 		"prettier:report": "npm run prettier:template -- --check .",
