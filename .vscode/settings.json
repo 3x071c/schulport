@@ -1,0 +1,30 @@
+{
+	"telemetry.enableCrashReporter": false,
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	},
+	"files.exclude": {
+		"**/.git": true,
+		"**/.DS_Store": true,
+		"**/node_modules": true,
+		"**/package-lock.json": true,
+		"**/*cache": true
+	},
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"prettier.requireConfig": true,
+	"prettier.useEditorConfig": true,
+	"prettier.withNodeModules": false,
+	"eslint.onIgnoredFiles": "warn",
+	"editor.linkedEditing": true,
+	"emmet.triggerExpansionOnTab": true,
+	"editor.insertSpaces": false,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"stylelint.reportNeedlessDisables": true,
+	"stylelint.reportInvalidScopeDisables": true,
+	"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+	"editor.wordWrap": "on"
+}
