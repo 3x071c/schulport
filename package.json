@@ -44,6 +44,7 @@
 		"fix": "run-s format",
 		"format": "run-s prettier:fix eslint:fix stylelint:fix",
 		"lint": "run-s prettier:report eslint:report stylelint:report",
+		"new": "npm i && npm i -g expo-cli && npm i -g sharp-cli",
 		"preinstall": "npx only-allow npm",
 		"prepare": "npx husky install",
 		"prettier:fix": "npm run prettier:individual -- .",
