@@ -39,7 +39,7 @@
 		"format": "run-s prettier:fix eslint:fix stylelint:fix",
 		"lint": "run-s prettier:report eslint:report stylelint:report",
 		"optimize": "cross-env NODE_ENV=production expo-optimize",
-		"preinstall": "only-allow npm",
+		"preinstall": "npx only-allow npm",
 		"prepare": "npx husky install",
 		"prettier:fix": "npm run prettier:individual -- .",
 		"prettier:individual": "npm run prettier:template -- --write",
