@@ -484,4 +484,3 @@ $RECYCLE.BIN/
 web-build/
 # === End of specific rules ===
 # === Custom ESLint ignores ===
-./*.js

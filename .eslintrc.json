@@ -20,9 +20,10 @@
 		"universe/web",
 		"universe/native",
 		"universe/shared/typescript-analysis",
+		"plugin:jest/recommended",
 		"plugin:prettier/recommended"
 	],
-	"overrides": [],
+
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
 		"project": "./tsconfig.eslint.json",
@@ -33,6 +34,7 @@
 		}
 	},
 	"plugins": [
+		"jest",
 		"react",
 		"react-hooks",
 		"jsx-a11y",
@@ -43,10 +45,7 @@
 	],
 	"root": true,
 	"rules": {
-		"react/react-in-jsx-scope": "off" /* collides with NextJS and Ionic globals */,
-		"react/prop-types": "off" /* prone to false positives */,
 		"import/prefer-default-export": "off" /* annoyance: future expandability often intentional */,
-		"react/jsx-filename-extension": [2, { "extensions": [".jsx", ".tsx"] }] /* airbnb: allow .tsx */,
 		"react/jsx-props-no-spreading": "off" /* airbnb: allow spread */,
 		"import/order": "off" /* airbnb: we use autofix */,
 		"no-console": "off" /* airbnb: annoyance */,
@@ -76,5 +75,13 @@
 		"@typescript-eslint/no-explicit-any": "off" /* annoyance: necessary sometimes */,
 		"@typescript-eslint/ban-ts-comment": "off" /* annoyance: this is intentional */,
 		"import/no-extraneous-dependencies": "off" /* bug: can't exclude certain packages such as twin */
-	}
+	},
+	"overrides": [
+		{
+			"files": ["*.js"],
+			"rules": {
+				"@typescript-eslint/explicit-module-boundary-types": "off" /* annoyance: JS is type-free */
+			}
+		}
+	]
 }
