@@ -1,6 +1,5 @@
-// @generated: @expo/next-adapter@3.0.1
+import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import React from 'react';
 
 const styles = StyleSheet.create({
 	container: {

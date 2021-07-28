@@ -91,8 +91,7 @@
 		"react-native-reanimated": "^2.2.0",
 		"react-native-safe-area-context": "^3.2.0",
 		"react-native-screens": "^3.4.0",
-		"react-native-web": "^0.17.1",
-		"setimmediate": "^1.0.5"
+		"react-native-web": "^0.17.1"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.14.8",
@@ -165,9 +164,10 @@
 		"collectCoverage": true,
 		"collectCoverageFrom": [
 			"**/*.{tsx,ts,jsx,js}",
-			"!**/coverage/**",
-			"!**/node_modules/**",
-			"!**/.expo/**",
+			"!**/coverage",
+			"!**/node_modules",
+			"!**/.expo",
+			"!**/web-build",
 			"!./*.js"
 		]
 	},
